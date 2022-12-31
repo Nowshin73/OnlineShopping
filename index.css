@@ -1,0 +1,276 @@
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    margin: 0 0 0 0;
+  }
+
+  .header {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 5rem;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 2px 6px 20px gray;
+  }
+
+  .cat {
+    display: flex;
+    gap: 2rem;
+  }
+.cat-list{
+  display: flex;
+  gap: 2rem;
+}
+  .cat a {
+    font-family: Lucida;
+    font-size: larger;
+    text-decoration: none;
+    color: rgb(32, 31, 31);
+  }
+
+  .cat a:hover {
+    text-decoration: underline;
+    color: black;
+  }
+/* Hide the link that should open and close the topnav on small screens */
+.cat1{
+  display: none;
+}
+  .heading {
+
+    font-size: xx-large;
+    background: rgb(37, 37, 37);
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .content1 {
+    display: flex;
+    justify-content: baseline;
+    background-color: #e6e5dd;
+    margin-bottom: 5rem;
+    gap: 2rem;
+  }
+.promo1{
+  flex: 1;
+  overflow: hidden;
+}
+  .rightslider {
+    flex: 1;
+    margin-top: 10rem;
+  }
+
+  #headline1 {
+
+    font-size: 6rem;
+  }
+
+  .button1 {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: baseline;
+    gap: 2rem;
+  }
+
+  .button1 button {
+
+    color: white;
+    background: rgb(34, 33, 33);
+    font-size: larger;
+    padding: 10px 30px;
+    box-shadow: none;
+  }
+
+  .button1 button:hover {
+    background: #e6e5dd;
+    border: 2px solid black;
+    color: black;
+  }
+
+  .content2 {
+    margin: 2rem;
+  }
+
+  #heading2 {
+
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+  }
+
+  .headline2 {
+    margin-top: -290px;
+    position: sticky;
+    width: max-content;
+
+    font-size: x-large;
+    color: white;
+    background: rgba(27, 27, 27, 0.856);
+    padding: 0px 14px;
+
+  }
+
+  .grid1 {
+    display: flex;
+    gap: 12px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 17rem;
+  }
+
+  .promo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .images {
+    width: 478px;
+    height: 668px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .images img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .images img:hover {
+    transform: scale(1.2);
+  }
+.content3{
+  display: flex;
+  flex-direction: column;
+ justify-items: center;
+}
+.c3-container{
+  display: flex;
+  justify-content: center;
+  margin: 0px 4rem 2rem 4rem;
+  height: 1000px;
+}
+.c3-left{
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+.c3-left img{
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+.c3-right,.c3-upright,.c3-downright{
+  flex: 1;
+  overflow: hidden;
+}
+.c3-upright img{
+  width: 100%;
+}
+.c3-downright img{
+  width: 100%;
+ margin-top: -5px;
+}
+  .content4 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+  }
+  .myslides{
+    grid-template-columns: auto auto auto auto;
+    gap:1rem;
+  }
+  .footer {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(90deg,#3887ac , #88c4df);
+    margin-bottom: 0px;
+    padding: 20px;  
+   color: white;
+  }
+
+  .footelements {
+    display: flex;
+    gap: 20rem;
+  }
+
+  .footelements a {
+
+   color: white;
+  }
+
+  #cp {
+    margin-top: 10px;
+  }
+
+  #customercare {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  @media (max-width:746px) {
+    .header {
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+    .cat{
+      display: none;
+    }
+    .responsive{
+      display: grid;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .cat1 {
+      justify-items: right;
+      display: block;
+    }
+    .cat1 .icon{
+     color: #000;
+     font-size: larger;
+    }
+
+    .content1{
+      flex-direction: column;
+      gap: 1rem;
+      background: white;
+    }
+    .promo1 img{
+     width: 100%;
+    }
+    .rightslider {
+      padding: 2rem 2rem;
+      margin-top: 0rem;
+      
+    }
+  
+    #headline1 {
+
+      font-size: 3rem;
+    }
+  
+    .button1 {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: baseline;
+      gap: 2rem;
+    }
+    
+  .button1 button {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    box-shadow: none;
+  }
+    
+  .button1 button:hover, .button1 button:active{
+  background: white;
+  }
+  }
