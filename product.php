@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 include("functions/functions.php");
+include("functions/conn.php");
 ?>
 <html lang="en">
 

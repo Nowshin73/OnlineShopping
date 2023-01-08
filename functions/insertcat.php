@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
-$con = mysqli_connect("localhost","root","","ecommerce");
+include("conn.php");
+//include("conn2.php");
 ?>
 <html lang="en">
 <head>

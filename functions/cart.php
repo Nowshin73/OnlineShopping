@@ -1,5 +1,7 @@
 <?php
-$con = mysqli_connect("localhost","root","","ecommerce");
+include("conn.php");
+//include("conn2.php")
+//$con = mysqli_connect("localhost","root","","ecommerce");
 function getIp(){
     $ip = $_SERVER['REMOVE_ADDR'];
     if(!empty($_SERVER['HTTP_CLIENT_IP'])){
