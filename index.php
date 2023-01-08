@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 include("functions/functions.php");
-include("functions/conn.php");
+include("functions/conn2.php");
 ?>
 <html lang="en">
 <head>
@@ -23,7 +23,7 @@ include("functions/conn.php");
       <?php getCats();?>
     </div>
     <div class="cat1">
-      <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+      <a href="javascript:void(0);" class="icon" id="Cat1" onclick="hamburger()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
@@ -31,11 +31,11 @@ include("functions/conn.php");
   <div class="heading">
     <p> Women's Traditional Pakistani Dresses</p>
   </div>
-  <div class="cart">
+  <!-- <div class="cart">
     <h1>total Items: <?php total_items();?></h1>
     <h1>Cart: <?php cart();?></h1>
     <h1>total price: <?php total_price(); ?> </h1>
-  </div>
+  </div> -->
   <div class="content1">
     <div class="promo1">
       <img src="images/m3-PhotoRoom2.png" alt="cloth1">
@@ -53,13 +53,13 @@ include("functions/conn.php");
     <div id="heading2">
       Shop by Category
     </div>
+ 
     <div class="grid1">
       <a href='main.php?cat_id=6'><div class="promo2">
         <div class="images"><img src="images/OIP.jpg" alt=""></div>
         <div class="headline2">
           <p> Unstitched</p>
         </div>
-
       </div></a>
       <a href="main.php?cat_id=7"><div class="promo2">
         <div class="images"><img src="images/m5.jpg" alt=""></div>
@@ -161,11 +161,17 @@ include("functions/conn.php");
   }
   function hamburger() {
    
-  let x = document.getElementsByClassName("Header");
-  if (x.className === "header") {
-      x[0].style.display = "grid";
+  let x = document.getElementById("category");
+  let y = document.getElementById("Header");
+  let z = document.getElementById("Cat1");
+  if (x.className === "cat") {
+    x.className += " responsive";
+    y.className += "header-res";
+    z.className += "cat1-res";
   } else {
     x.className = "cat";
+    y.className = "header";
+   z.className = "icon";
   }
 }
   </script>
