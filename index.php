@@ -17,17 +17,16 @@ include("functions/conn2.php");
 
 <body>
   <!--header-->
-  <div class="header" id="Header">
-    <div class="logo"><a href="index.php"><img src="images/shop-icon.png" alt="" width="200px"></a></div>
     <div class="cat" id="category">
+      <a href="index.php"><img src="images/shop-icon.png" alt="" width="200px"></a>
       <?php getCats();?>
-    </div>
-    <div class="cat1">
       <a href="javascript:void(0);" class="icon" id="Cat1" onclick="hamburger()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
-  </div>
+    <div class="cat1">
+    </div>
+  
   <div class="heading">
     <p> Women's Traditional Pakistani Dresses</p>
   </div>
@@ -162,16 +161,14 @@ include("functions/conn2.php");
   function hamburger() {
    
   let x = document.getElementById("category");
-  let y = document.getElementById("Header");
-  let z = document.getElementById("Cat1");
   if (x.className === "cat") {
     x.className += " responsive";
-    y.className += "header-res";
-    z.className += "cat1-res";
+    // y.className += "header-res";
+    // z.className += "cat1-res";
   } else {
     x.className = "cat";
-    y.className = "header";
-   z.className = "icon";
+  //   y.className = "header";
+  //  z.className = "icon";
   }
 }
   </script>

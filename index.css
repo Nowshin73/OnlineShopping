@@ -2,21 +2,12 @@ body {
   font-family: Georgia, Times, 'Times New Roman', serif;
   margin: 0 0 0 0;
 }
-
-.header {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  gap: 5rem;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  box-shadow: 2px 6px 20px gray;
-}
-
 .cat {
   display: flex;
   gap: 2rem;
+  align-items: center;
+  overflow: hidden;
+
 }
 
 .cat-list {
@@ -28,6 +19,7 @@ body {
   font-family: Lucida;
   font-size: larger;
   text-decoration: none;
+  padding: 14px 16px;
   color: rgb(32, 31, 31);
 }
 
@@ -37,7 +29,7 @@ body {
 }
 
 /* Hide the link that should open and close the topnav on small screens */
-.cat1 {
+.cat .icon {
   display: none;
 }
 
@@ -234,50 +226,29 @@ body {
 }
 
 @media (max-width:746px) {
-  .header.header-res {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .cat{
+    justify-content: space-between;
   }
-
-  .topnav.responsive .cat1 {
+  .cat a:not(:first-child){display: none;}
+  .cat a.icon {
+    float: right;
+    display: block;
+  }
+  .cat.responsive {
+    position: relative;
+    top:2rem;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .cat.responsive a {
+    float: none;
+    display: block;
+  }
+  .cat.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
-  .cat {
-    display: none;
-  }
-
-  .cat.responsive {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-  }
-
-  .cat1 {
-    justify-items: right;
-    display: block;
-    position: fixed;
-    color: #000;
-    font-size: larger;
-  }
-
-  .icon.cat1-res{
-    position: absolute;
-    top: 8rem;
-    right: 20px;
-  }
-
   .content1 {
     flex-direction: column;
     gap: 1rem;
