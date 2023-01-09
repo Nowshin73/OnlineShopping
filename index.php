@@ -54,13 +54,13 @@ include("functions/conn2.php");
     </div>
  
     <div class="grid1">
-      <a href='main.php?cat_id=6'><div class="promo2">
+      <a  class="grid-com" href='main.php?cat_id=6'><div class="promo2">
         <div class="images"><img src="images/OIP.jpg" alt=""></div>
         <div class="headline2">
           <p> Unstitched</p>
         </div>
       </div></a>
-      <a href="main.php?cat_id=7"><div class="promo2">
+      <a class="grid-com" href="main.php?cat_id=7"><div class="promo2">
         <div class="images"><img src="images/m5.jpg" alt=""></div>
         <div class="headline2">
           <p> Semistitched</p>
@@ -68,7 +68,7 @@ include("functions/conn2.php");
         <div class="button1"></div>
       </div>
       </a>
-      <a href="main.php?cat_id=9"><div class="promo2">
+      <a class="grid-com" href="main.php?cat_id=9"><div class="promo2">
         <div class="images"><img src="images/m2.jpg" alt=""></div>
         <div class="headline2">
           <p>Ready To Wear</p>

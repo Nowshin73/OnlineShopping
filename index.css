@@ -99,18 +99,6 @@ body {
 
 }
 
-.headline2 {
-  margin-top: -290px;
-  position: sticky;
-  width: max-content;
-
-  font-size: x-large;
-  color: white;
-  background: rgba(27, 27, 27, 0.856);
-  padding: 0px 14px;
-
-}
-
 .grid1 {
   display: flex;
   gap: 12px;
@@ -118,7 +106,9 @@ body {
   margin-right: 2rem;
   margin-bottom: 17rem;
 }
-
+.grid1 a{
+  text-decoration: none;
+}
 .promo2 {
   display: flex;
   flex-direction: column;
@@ -139,6 +129,17 @@ body {
 
 .images img:hover {
   transform: scale(1.2);
+}
+
+.headline2 {
+  margin-top: -290px;
+  position: sticky;
+  width: max-content;
+  font-size: x-large;
+  color: white;
+  background: rgba(27, 27, 27, 0.856);
+  padding: 0px 14px;
+
 }
 
 .content3 {
@@ -195,12 +196,11 @@ body {
 }
 
 .footer {
-  margin-top: 5rem;
+  margin:0;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: linear-gradient(90deg, #3887ac, #88c4df);
-  margin-bottom: 0px;
   padding: 20px;
   color: white;
 }
@@ -287,7 +287,38 @@ body {
   .button1 button:active {
     background: white;
   }
+  .content2{
+    margin: 0;
+  }
   .grid1 {
   flex-direction: column;
+  gap: 15rem;
+  margin-left: 0;
+  margin-right: 0;
+  }
+ 
+  .images{
+    width: 100%;
+    min-width: 350px;
+    height: max-content;
+  }
+  .c3-container{
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 350px;
+    height: max-content;
+  }
+  .myslides {
+  grid-template-columns: auto;
+  }
+  .footer{
+    align-items: center;
+  }
+  .footelements {
+    flex-direction: column;
+   
+    gap: 2rem;
   }
 }
