@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 include("functions/functions.php");
-include("functions/conn2.php");
+include("functions/conn.php");
 ?>
 <html lang="en">
 <head>

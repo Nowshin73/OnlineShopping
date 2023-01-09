@@ -51,6 +51,7 @@ body {
 }
 
 .promo1 {
+z-index: -1;
   flex: 1;
   overflow: hidden;
 }
@@ -227,6 +228,7 @@ body {
 
 @media (max-width:746px) {
   .cat{
+    gap: 1rem;
     justify-content: space-between;
   }
   .cat a:not(:first-child){display: none;}
@@ -318,7 +320,6 @@ body {
   }
   .footelements {
     flex-direction: column;
-   
     gap: 2rem;
   }
 }
