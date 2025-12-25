@@ -1,5 +1,5 @@
 # Online Shopping is a PHP-based web application
-# Technologies: html, css, php, mysql
+# Technologies: html, css, javascript, php, mysql
 # Features:
 - customer login, registration
 - displaying products by category
