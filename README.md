@@ -6,6 +6,13 @@
 - product detail page
 - add to cart
 - my products
+- get related products
+Admin:
+- insert products
+- delete products
+- update products
+- add categories
+- add brands
 
 
 
